@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercises</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Exercises</h1>
+    </header>
+    <article class="instructions">
+      <h2>Instructions</h2>
+      <ul>
+        <li>Fork this StackBlitz</li>
+        <li>Work on a solution</li>
+        <li>Make the StackBlitz Public</li>
+        <li>Add it as the solution in the form</li>
+      </ul>
+    </article>
+    <hr class="rounded" />
+    <article>
+      <h2>Exercise 1: DOM Manipulation</h2>
+      <p>
+        Demonstrate your understanding of event propagation within the DOM by
+        writing a snippet of plain javascript that displays an alert when the
+        green area is clicked but not when the red area is clicked.
+      </p>
+      <br />
+      <p class="instructions">
+        Please add your code at the
+        <strong><code>exercises/exercise-one.ts</code></strong> file.
+      </p>
+      <div>
+        <div
+          (onclick)="areaClicked()"
+          id="a"
+          style="
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            border: 1px solid;
+            margin: auto;
+          "
+        >
+          <div
+            id="b"
+            style="
+              margin: 25px;
+              height: 50px;
+              width: 50px;
+              background-color: red;
+            "
+          ></div>
+        </div>
+      </div>
+    </article>
+    <hr class="rounded" />
+    <article>
+      <h2>Exercise 2: Asynchronous Javascript</h2>
+      <p>
+        Demonstrate your understanding of Asynchronous tasks by implementing a
+        function to aggregate book data from multiple Asynchronous sources into
+        a single JSON object.
+      </p>
+      <br />
+      <p class="instructions">
+        Please add your code at the
+        <strong><code>exercises/exercise-two.ts</code></strong> file
+      </p>
+      <h3>List of Books</h3>
+      <pre id="booksResponse"></pre>
+    </article>
+  </body>
+</html>
